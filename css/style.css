@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+
+*{
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+
+section{
+    height: 100vh;
+    padding: 1rem 5%;
+    padding-top: 6rem;    
+}
+
+.btn{
+    padding:.7rem 1rem;
+    font-size: 1rem;
+    color:#000;
+    border-radius: 5rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    box-shadow: 0 .1rem .3rem rgba(0,0,0,.3);
+    overflow: hidden;
+}
+
+.btn:hover{
+    background-color: #444;
+}
+/* Header Section */
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: fixed;
+    top: 0;left: 0;
+    padding: 1.5rem 5%;
+    background-color: black;
+    box-shadow: 0 .1rem .3rem rgba(0,0,0,.3);
+}
+
+/* Navigation Bar  */
+header .navbar ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;   
+}
+
+header .navbar ul li{
+    margin: 0rem 1rem; 
+}
+header .navbar ul li a{
+    font-size: 1rem;
+    color: #fff;
+}
+
+header .navbar ul li a:hover{
+    color: #443;
+}
+
+/* Home section Starts  */
+.home{
+     /* background: url(https://cf.quizizz.com/img/mkt/1-HERO-Digital_Collage.png) no-repeat;  */
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.home button{
+    margin: 1rem;
+}
+
+/* Home section Ends  */
+.question{
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.question .inner-div{
+    width: 50%;
+    box-shadow: 0 .1rem .4rem rgba(0,0,0,.3);
+    border-radius: 2%;
+}
+
+.question .inner-div{
+    display: none;
+    padding: 1rem 1rem;
+    margin: 0.5rem;
+}
+
+.question .inner-div h2{
+    font-size: 2rem;
+    margin: 1rem 0rem 2rem 0rem;
+}
+.question .inner-div ul li{
+    padding: 1rem 1rem;
+    margin: 0.5rem;
+    margin-left: 3rem;
+    list-style: upper-alpha;
+    font-size: 1.2rem;
+    font-weight: 100;
+}
+.question .inner-div ul li input{
+    cursor: pointer;
+}
+
+.question .inner-div #next-button{
+    display: block;
+    margin: auto;
+    width: 20%;
+    margin-top: 2rem;
+}
+
+.question .inner-div #showScore{
+    background: lightgreen;
+    margin-top: 2rem;
+}
+
+.question .inner-div .score{
+    font-size: 3rem;
+}
+
