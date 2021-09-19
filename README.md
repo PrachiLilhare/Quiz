@@ -9,7 +9,7 @@ Javascript
 GOOGLE FONTS*
 GitHub
 Vercel
-Description
+Description:
 Quiz application where user can test his/her knowledge on javascript.For one correct question user will score 5 points.
 After submitting all question there will be a popup window which display user's score.
 
