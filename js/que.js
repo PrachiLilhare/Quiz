@@ -14,17 +14,6 @@ let questions = [
   },
   {
     id: 2,
-    question: "What is the full form of CPU?",
-    answer: "Central Processing Unit",
-    options: [
-      "Central Program Unit",
-      "Central Processing Unit",
-      "Central Preload Unit",
-      "None of these"
-    ]
-  },
-  {
-    id: 3,
     question: "What is the full form of E-mail",
     answer: "Electronic Mail",
     options: [
@@ -35,7 +24,7 @@ let questions = [
     ]
   },
   {
-    id: 4,
+    id: 3,
     question: " The basic difference between JavaScript and Java is _________?",
     answer: " Functions are values, and there is no hard distinction between methods and fields",
     options: [
@@ -46,7 +35,7 @@ let questions = [
     ]
   },
   {
-    id: 5,
+    id: 4,
     question: "The property of JSON() method is __________?",
     answer: "it is invoked automatically by the JSON.stringify() method",
     options: [
@@ -58,7 +47,7 @@ let questions = [
   },
   
   {
-    id: 6,
+    id: 5,
     question: "The behaviour of the instances present of a class inside a method is defined by __________?",
     answer: "Classes",
     options: [
@@ -69,7 +58,7 @@ let questions = [
     ]
   },
   {
-    id: 7,
+    id: 6,
     question: "What will be the output of the following JavaScript code? var o = new F(); o.constructor === F",
     answer: "true",
     options: [
@@ -80,7 +69,7 @@ let questions = [
     ]
   },
   {
-    id: 8,
+    id: 7,
     question: " If A is the superclass and B is the subclass, then subclass inheriting the superclass can be represented as ?",
     answer: "B.prototype=inherit(A);",
     options: [
@@ -91,7 +80,7 @@ let questions = [
     ]
   },
   {
-    id: 9,
+    id: 8,
     question: " What is the prototype represents in the following JavaScript code snippet? function f() {};",
     answer: "A custom constructor",
     options: [
@@ -102,7 +91,7 @@ let questions = [
     ]
   },
   {
-    id: 10,
+    id: 9,
     question: "The basic purpose of the toLocaleString() is to _________?",
     answer: "it is invoked automatically by the JSON.stringify() method",
     options: [
@@ -113,7 +102,7 @@ let questions = [
     ]
   },
   {
-    id: 11,
+    id: 10,
     question: " What kind of scoping does JavaScript use?",
     answer: "Lexical",
     options: [
@@ -124,7 +113,7 @@ let questions = [
     ]
   },
   {
-    id: 12,
+    id: 11,
     question: "What must be done in order to implement Lexical Scoping?",
     answer: "Reference the current scope chain",
     options: [
@@ -135,7 +124,7 @@ let questions = [
     ]
   },
   {
-    id: 13,
+    id: 12,
     question: "What is closure?",
     answer: " Both Function objects and Scope where function’s variables are resolved",
     options: [
@@ -146,7 +135,7 @@ let questions = [
     ]
   },
   {
-    id: 14,
+    id: 13,
     question: "What is the opposite approach to the lexical scoping?",
     answer: "Dynamic scoping",
     options: [
@@ -157,7 +146,7 @@ let questions = [
     ]
   },
   {
-    id: 15,
+    id: 14,
     question: "What is the purpose of the dynamic scoping?",
     answer: "Variables can be declared outside the scope",
     options: [
@@ -168,29 +157,7 @@ let questions = [
     ]
   },
   {
-    id: 16,
-    question: "What will be the equivalent statement of the following JavaScript statement? var o = new Object();",
-    answer: "var o= new Object;",
-    options: [
-      "var o = Object();",
-      "var o;",
-      "var o= new Object;",
-      "Object o=new Object();"
-    ]
-  },
-  {
-    id: 17,
-    question: "JavaScript Code can be called by using _________",
-    answer: "Function/Method",
-    options: [
-      "RMI",
-      "Triggering Event",
-      "Preprocessor",
-      "Function/Method"
-    ]
-  },
-  {
-    id: 18,
+    id: 15,
     question: "The type of a variable that is volatile is _______________",
     answer: "Mutable variable",
     options: [
@@ -218,7 +185,7 @@ function next() {
     clearInterval(mytime);
     location.href = "end.html";
   }
-  console.log(question_count);
+  //console.log(question_count);
 
   let user_answer = document.querySelector("li.option.active").innerHTML;
   // check if the answer is right or wrong
@@ -226,7 +193,7 @@ function next() {
     points += 5;
     sessionStorage.setItem("points", points);
   }
-  console.log(points);
+  //console.log(points);
 
   question_count++;
   show(question_count);
@@ -261,4 +228,3 @@ function toggleActive() {
     };
   }
 }
-//End Quiz

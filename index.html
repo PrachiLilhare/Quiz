@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,23 +8,149 @@
     <!-- CSS Link -->
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
+    <!-- header section starts  -->
+    <header>
+        <div class="logo"><a href="#">Quiz.com</a></div>
+
+        <input type="checkbox" id="menu-bar">
+        <label for="menu-bar">Menu</label>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#aboutus">About Us</a></li>
+                <li><a href="#subjects">Subjects</a>
+                    <ul>
+                        <li><a href="#">Java</a></li>
+                        <li><a href="#">Javascript</a></li>
+                        <li><a href="#">Operating System</a></li>
+                        <li><a href="#">Computer Network</a></li>
+                    </ul>
+                </li>
+                <li><a href="#contactus">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- header section ends  -->
     <!-- Home Section Starts  -->
     <section class="home">
-        <div class="wrapper">
+        <div class="wrapper" id="home">
             <div class="welcome_text">
-                <form class="welcome_form" name="welcome_form" onsubmit="submitForm(event)">
-                    <input type="text" name="name">
-                    <button>Start Quiz</button>
-                    <!-- <button class="btn">Register Now</button> -->
-                    <!-- <button class="btn" onclick="startQuiz()">Start Quiz</button> -->
+                <form class="welcome_form" name="welcome_form" id="myForm" onsubmit="submitForm(event)">
+                    <input type="text" name="name" placeholder="Enter Your Name">
+                    <input type="email" name="email" placeholder="Enter Your e-mail">
+                    <input type="submit" value="StartQuiz" id="startQuiz"/>
+                    <!-- <button id="startQuiz">Start Quiz</button> -->
+                    <button class="btn"><a  href="#contactus">Register Now</a></button>
                 </form>
             </div>
         </div>
-        
     </section>
     <!-- Home Section Ends  -->
+
+    <!-- quiz section starts  -->
+    <section id="Quiz">
+        <div class="wrapper">
+            <div class="quiz">
+              <div class="quiz_header">
+                <div class="quiz_user">
+                  <h3>Welcome! <span class="name"></span></h3>
+                </div>
+                <div class="quiz_timer">
+                  <span class="time">00:00</span>
+                </div>
+              </div>
+              <div class="quiz_body">
+                <div id="questions">
+                
+      
+                  <!-- <ul class="option_group">
+                    <li class="option">option 1</li>
+                    <li class="option">option 2</li>
+                    <li class="option">option 3</li>
+                    <li class="option">option 4</li>
+                  </ul> -->
+                </div>
+      
+                <button class="btn-next" onclick="next()">Next Question</button>
+              </div>
+            </div>
+          </div>      
+    </section>
+    <!-- quiz section ends  -->
+    <!-- about us section starts  -->
+
+    <section class="aboutus" id="aboutus">
+        <div class="image">
+            <img src="/img/Quiz (1).jpg" alt="">
+        </div>
+        <div class="content">
+            <h3>About Us</h3>
+            <p>A quiz is a form of game or mind sport in which players attempt to answer questions correctly about a
+                certain or variety of subjects. Quizzes can be used as a brief assessment in education and similar
+                fields to measure growth in knowledge, abilities, or skills.
+            </p>
+            <p>A Quiz is a set of questions to make sure you know something about a topic. Here , We will going to test
+                your knowledge on java, javascript, Operating-system,Computer network. For particular topic, you have to click on below images/logo and solve quiz related to that topic.
+                Default you can solve javascript quiz, else for solving java,Operating-system,Computer Networks you have to click on register now, and have quiz for all subjects.
+                At the end , you will get to know how much you score. For each you will get 5 marks. All the Best!
+            </p>
+        </div>
+        <div class="subjects" id="subjects">
+            <div class="box-container">
+                <div class="box">
+                    <img src="/img/java-logo.jpg" alt="java" id="java">
+                </div>
+                <div class="box">
+                    <img src="/img/javascript.jpg" alt="javascript" id="javascript">
+                </div>
+                <div class="box">
+                    <img src="/img/Operating-system.jpg" alt="OS" id="os">
+                </div>
+                <div class="box">
+                    <img src="/img/CN.jpg" alt="CN" id="cn">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- about us section ends  -->
+
+    <!-- contact section starts  -->
+    <section class="contact" >
+        <h1 class="heading" id="contactus">Contact Us</h1>
+        <div class="row" id="register">
+            <form action="">
+                <input type="text" placeholder="full name" class="box">
+                <input type="email" placeholder="email address" class="box">
+                <input type="password" placeholder="your password" class="box">
+                <input type="number" placeholder="your number" class="box">
+                <textarea name="" id="" cols="30" rows="10" class="box address" placeholder="your address"></textarea>
+                <input type="submit" class="btn" value="Send now">
+            </form>
+        </div>
+    </section>
+    <!-- contact section ends  -->
+
+    <!-- footer section start  -->
+    <div class="footer">
+        <div class="created">
+            Created By <span>Prachi Lilhare </span>All Rights Reserved.
+        </div>
+    </div>
+    <!-- footer section ends -->
+
 </body>
 <!-- start quiz  -->
 <script src="js/start.js"></script>
+<!-- site.js -->
+<script src="js/que.js"></script>
+
+<!-- user info -->
+<script src="js/userinfo.js"></script>
+
+<!-- timer -->
+<script src="js/timer.js"></script>
+
+
 </html>
